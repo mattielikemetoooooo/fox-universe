@@ -134,8 +134,10 @@
 
   <script>
     function sayWelcome() {
-      const name = document.getElementById("name").value.trim();
-      if (name) {
+      const name = document.getElementById("name").value.trim().toLowerCase();
+      if (name === "mattie") {
+        alert("你好，mattie，祝你生日快乐！");
+      } else if (name) {
         alert(`你好 ${name}，欢迎来到 FOX 宇宙！`);
       } else {
         alert("请输入你的名字再进入宇宙哦~");
@@ -144,3 +146,4 @@
   </script>
 </body>
 </html>
+ 
